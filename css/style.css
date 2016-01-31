@@ -1,0 +1,373 @@
+
+/* ---------------general------------------*/
+
+* { 
+	font-family: 'Geneva', san-serif;
+}
+
+
+html, body {
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+section{
+    width:100%;
+    clear:both;
+}
+
+h1 {
+	color: white;
+	text-shadow: 2px 3px 2px #111111;
+	text-align: center; 
+	font-weight: bolder;
+}
+
+h2 {
+	color: white;
+	font-size: 1.2em;
+}
+h3, form{ 
+	color: white;
+    text-shadow: 2px 3px 2px #111111;
+    text-align: center;
+    font-weight: bolder;
+}
+
+p .bold {
+	text-shadow: 4px 3px 5px #111111;
+	
+}	
+
+
+
+#garden, #gamesBG, #collage, #game, #about, iframe, video{
+	margin-top:50px;
+	
+}
+
+.window{
+	display: flex;
+	width:100%;
+	height:100%;
+}	
+/* ------------navigation, social-------------- */
+header{
+	clear:both;
+    width:100%;
+    background-color:#ff9900;
+    opacity:0.9;
+    z-index:100;
+    position:fixed;
+    overflow:hidden;
+    margin-top: 0;
+    color:white;
+}
+
+
+nav{
+	font-size:1.5em;
+	color:white;
+}
+
+
+.visited{
+	font-size:1em;
+	color:#daff66;
+	font-weight:bolder;
+	
+}
+ul.nav a:hover { background-color:transparent !important; }
+ul.nav a:focus { background-color:transparent !important; }
+ul.nav a:active { background-color:transparent !important; }
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+a:hover{
+    color:red;
+    text-decoration:none;
+    
+}
+#logo{
+    float:left;
+    width:30%  
+}
+
+#logo img{
+	margin-top:10px;
+    height:35px;
+    width:125px;
+    
+}
+#social{
+    padding-top: 5px;
+    margin:5px 0;
+    height:auto;
+    width: auto;
+    color:#0068ff;
+    text-align:center;
+    float:right;
+}
+#social img{
+    border-radius:10px;
+    width:30px;
+    height:30px;
+    display:inline;
+}
+
+/*-----------------slider----------------------- */
+#main{
+	margin:auto;
+	color:white;
+	
+}
+
+#windowView{
+	background-image: url(../images/111st_amsterdam.JPG);
+	background-size:cover;
+	width:100%;
+	background-position:center;
+	 background-repeat:no-repeat;
+	animation: slider 20s  alternate infinite;
+	-webkit-animation: slider 20s  alternate infinite; 
+	-moz-keyframes-animation: slider 20s  alternate infinite; 
+	z-index:-1;
+}
+
+#slider { 
+		width: 100%;
+		height:600px;
+		background-size: cover;
+    	background-repeat: no-repeat;
+    	background-attachment: scroll;
+    	background-position: center top;
+	
+	}
+	
+@keyframes slider{
+		0%{background-image: url(../images/riverterrace2.JPG); background-size:cover;}
+		25%{background-image:url(../images/Carl_Schurz_Garden.JPG); background-size:cover;}
+		50%{background-image:url(../images/Carl_Schurz_Garden2.JPG); background-size:cover;}
+		75%{background-image:url(../images/161_riverside.JPG); background-size:cover;}
+		
+		}
+@-webkit-keyframes slider{
+		0%{background-image: url(../images/riverterrace2.JPG);}
+		25%{background-image:url(../images/Carl_Schurz_Garden.JPG);}
+		50%{background-image:url(../images/Carl_Schurz_Garden2.JPG);}
+		75%{background-image:url(../images/161_riverside.JPG);}
+		
+	}
+@-moz-keyframes slider{
+	    0%{background-image: url(../images/riverterrace2.JPG);}
+		25%{background-image:url(../images/Carl_Schurz_Garden.JPG);}
+		50%{background-image:url(../images/Carl_Schurz_Garden2.JPG);}
+		75%{background-image:url(../images/161_riverside.JPG);}
+		
+	}
+	
+
+
+
+/* -----------------map page---------------------- */
+#mapcolor {
+	background-color: #003300;
+}
+#bodycolor	{
+	background-color: #003300;
+}
+
+
+/* garden page */
+
+#gardenbody{
+	background-image:url(../images/Carl_Schurz_Garden.JPG);
+	min-width:100%;
+	min-height:100%;
+	background-size:cover;
+}
+
+#opacity {
+     min-width:100%;
+	 min-height:100%;	
+	 background-color:rgba(0,0,0,0.8);
+}
+
+.thumbnail{
+	box-shadow: 4px 3px 5px #111111;
+	box-shadow: none;
+	border:none;
+}
+
+/*.thumbnail {
+	padding: 8px;
+	border-radius:0px;
+	background-color: black;
+}*/
+ .thumbnail img{
+    width:300px !important;
+	height:150px !important;
+	
+    
+}
+
+#garden .thumbnail {
+	background:hsla(755, 95%, 40%, .5);
+	overflow:hidden;
+	filter:blur(50px);
+	
+}
+
+#garden .thumbnail p{
+	color:white !important;
+	font-size:1em;
+	
+}
+#garden h3{
+	
+	color:#daff66;
+}
+
+#garden .thumbnail p {
+	color:blue;
+	overflow:hidden;
+	filter:blur(10px);
+	padding:5px;
+	
+}
+
+
+
+/* game page */
+#masthead{
+	
+}
+#masthead img{
+	max-width:100%;
+	max-height:100%;
+	
+}
+.gameView{
+	margin-top:50px;
+	background-image:url(../images/Carl_Schurz_Garden.JPG);
+	z-index:-1;
+	background-size:cover;
+	
+}
+#box{
+	position:relative;
+	width:100px;
+	height:100px;
+	background-color:red;
+	display:none;
+	
+	}
+	#box img{
+		width:100px;
+		height:100px;
+		}
+
+
+    
+
+    
+/* about page */
+
+
+#about{
+	
+	width: 100%;
+    background:hsla(789, 95%, 25%, 1);
+
+    
+    
+
+}
+.photocollage{
+	width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.photocollage img{
+    /*top: 0px;
+    left: 0px;
+    right: 0px;*/
+    width: 100%;
+    height: 100%;
+}
+
+
+/*.about{
+    text-align: justify;
+    text-justify: inter-word;
+	display: inline-block;
+    vertical-align: middle;
+    float: none;
+    
+}
+
+ .col-center-block{
+   float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}*/
+
+#about .thumbnail{
+	
+	background-color:#273300;
+	color:white !important;
+}
+
+#about .thumbnail p{
+	color:white !important;
+	font-size:1em
+	
+}
+	
+#about h3{
+	color:#daff66;
+}	
+
+footer{
+	font-size:1em;
+	text-align:center;
+	height:50px;
+	padding-top: 10px;
+	background-color:#273300;
+	color:white;
+}
+
+
+@media(max-width: 768px){
+	#garden .thumbnail { 
+	    width: 80%;
+		margin:10px auto;
+
+	}
+	footer{
+		text-align:left;
+		height: 75px;
+		padding-bottom:5px 0;
+		}
+.gameView{
+	background-image:url(../images/Carl_Schurz_Garden.JPG);
+	z-index:-1;
+	background-size:cover;
+	background-position: center center;
+	}
+.photocollage{
+	display:none;
+	
+	}
+}
